@@ -7,7 +7,7 @@
         {!!$post->body!!}
     <div>
 
-<small>Written on {{$post->created_at}}</small>
+<small>Written on {{$post->created_at}} by {{$post ->user->name}}</small>
 <hr>
 <a href="/bgapp/public/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
 {!!Form::open(['action'=>['PostsController@destroy', $post->id],'method'=>'POST','class'=>'pull-right'])!!}
