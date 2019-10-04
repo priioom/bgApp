@@ -3,6 +3,9 @@
 <a href="/bgapp/public/posts" class="btn btn-default">Go Back</a>
 <h3>{{$post->title}}</h1>
     <hr/>
+    <div class="col-md-12 col-sm-12">
+            <img  class="img-responsive" src="../storage/cover_images/{{$post -> cover_image}}">
+            </div>
     <div>
         {!!$post->body!!}
     <div>
